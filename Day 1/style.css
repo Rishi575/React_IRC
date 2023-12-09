@@ -1,0 +1,58 @@
+body{
+    background: #757F9A; 
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A); 
+    background: linear-gradient(to right, #D7DDE8, #757F9A); 
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: fit-content;
+    width: 35vw;
+    display: flex;
+    background: #757F9A; 
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+    background: linear-gradient(to right, #D7DDE8, #757F9A); 
+    
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 30px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.065),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.051),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.033),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.032),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.07),
+  100px 100px 80px rgba(0, 0, 0, 0.19)
+;
+}
+
+input[type] {
+    width: 200px; 
+    padding: 10px; 
+    margin: 5px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+  }
+  
+  /* Apply additional styles when the textbox is focused */
+  input[type]:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change the border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow on focus */
+  }
+  input[type="submit"]:hover {
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+.navi{
+  
+}
+  
