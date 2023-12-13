@@ -1,0 +1,21 @@
+.cont{
+
+    margin-top: -7rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.69);
+}
+.age{
+    margin-top: -7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.age .ul .li{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: scale(0.5);
+}
