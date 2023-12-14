@@ -1,6 +1,7 @@
 const Contacts=()=>{
     return(
         <>
+        Contacts
         </>
     )
 }

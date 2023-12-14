@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Nav from "./Components/Navbar";
 import Home from "./pages/Home";
-// import About from "./pages/About";
-// import Contacts from "./pages/Contacts";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
      <Nav/><br/>
       <Routes>
         <Route path="" element={<Home/>}/>
-        {/* <Route path="" element={<About/>}/>
-        <Route path="" element={<Contacts/>}/> */}
+        <Route path="/About" element={<About/>}/>
+        <Route path="/Contacts" element={<Contacts/>}/>
       </Routes>
     </div>
   );
