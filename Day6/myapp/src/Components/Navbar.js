@@ -7,20 +7,37 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Rock from '@mui/icons-material/RocketLaunch';
 import Acc from '@mui/icons-material/AccountCircle'
-
+import Modal from '@mui/material/Modal';
+import { useNavigate } from 'react-router-dom';
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Nav() {
+  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -37,7 +54,19 @@ function Nav() {
     setAnchorElUser(null);
   };
 
+  const handleHome = () => {
+    navigate('/Home')
+  }
+
+  const handleAbout = () => {
+    navigate('/About')
+  }
+
+  const handleContact = () => {
+    navigate('/Contacts')
+  }
   return (
+    <>
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -115,27 +144,27 @@ function Nav() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },justifyContent:'end' }}>
-            
-            <Button onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
-                Home
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'end' }}>
+
+            <Button onClick={handleHome}
+              sx={{ my: 2, color: 'white', display: 'block' }}>
+              Home
             </Button>
-            <Button onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
-                About
+            <Button onClick={handleAbout}
+              sx={{ my: 2, color: 'white', display: 'block' }}>
+              About
             </Button>
-            <Button onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
-                Contacts
+            <Button onClick={handleContact}
+              sx={{ my: 2, color: 'white', display: 'block' }}>
+              Contacts
             </Button>
 
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Login">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              <IconButton onClick={handleOpen} sx={{ p: 1 }}>
+                <Acc alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -164,6 +193,22 @@ function Nav() {
         </Toolbar>
       </Container>
     </AppBar>
+    <Modal
+    open={open}
+    onClose={handleClose}
+    aria-labelledby="modal-modal-title"
+    aria-describedby="modal-modal-description"
+  >
+    <Box sx={style}>
+      <Typography id="modal-modal-title" variant="h6" component="h2">
+        Login
+      </Typography>
+      <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+      </Typography>
+    </Box>
+  </Modal>
+  </>
   );
 }
 export default Nav;

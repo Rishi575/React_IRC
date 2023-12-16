@@ -1,7 +1,7 @@
-const Contacts=()=>{
-    return(
+const Contacts = () => {
+    return (
         <>
-        Contacts
+            Contacts
         </>
     )
 }

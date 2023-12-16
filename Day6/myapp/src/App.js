@@ -7,9 +7,9 @@ import Contacts from "./pages/Contacts";
 function App() {
   return (
     <div>
-     <Nav/><br/>
+      <Nav />
       <Routes>
-        <Route path="" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/Contacts" element={<Contacts/>}/>
       </Routes>

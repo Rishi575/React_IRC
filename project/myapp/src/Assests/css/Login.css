@@ -1,10 +1,31 @@
+body{
+  overflow-x: hidden;
+
+  
+}
+.back{
+  /* background-size:100% ; */
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/6101961/pexels-photo-6101961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
 .container{
   display: flex;
   flex-direction: column;
-  margin-top: 0;
-  background: #fff;
+  width: 45vw;
+  /* opacity: 0.5; */
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  align-items: center;
+  margin-top: -4rem;
+  background: transparent;
   padding-bottom: 30px;
   transform: scale(0.7);
+  border-radius: 50px;
+  border-color: #DC281E;
 }
 
 
@@ -90,9 +111,9 @@
   width: 220px;
   height: 59px;
   color: #fff;
-  background: #EF3B36;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #F00000; 
+  background: -webkit-linear-gradient(to right, #DC281E, #F00000); 
+  background: linear-gradient(to right, #DC281E, #F00000);
 
   border-radius: 50px;
   font-size: 19px;

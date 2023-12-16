@@ -1,7 +1,7 @@
-const About=()=>{
-    return(
+const About = () => {
+    return (
         <>
-        About
+            About
         </>
     )
 }
