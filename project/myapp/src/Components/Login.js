@@ -10,7 +10,7 @@ import password_icon from '../Assests/images/password.png'
 const Login = () => {
 
 
-    const [action, setAction] = useState("Sign Up");
+    const [action, setAction] = useState("Sign up");
     return (
         <>
             <div className='back'>
@@ -20,7 +20,7 @@ const Login = () => {
                     <div className="text">{action}</div>
                 </div>
                 <div className="inputs">
-                    {action === "Login" ? <div></div> : <div className="input">
+                    {action === "Sign in" ? <div></div> : <div className="input">
                         <img src={user_icon} alt="" />
                         <input type="text" placeholder="Name" />
                     </div>}
@@ -37,8 +37,8 @@ const Login = () => {
                 {action === "Sign Up" ? <div></div> : <div className="forgot-password"><center>Lost Password?<span> Click Here!</span> </center>  </div>}
 
                 <div className="submit-container">
-                    <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Sign Up</div>
-                    <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Login") }}>Login</div>
+                    <div className={action === "Sign in" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Sign Up</div>
+                    <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Sign in") }}>Sign in</div>
                 </div>
             </div>
             </div>
