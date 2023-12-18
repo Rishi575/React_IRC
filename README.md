@@ -9,6 +9,8 @@ This project help's me to improve UI design and react application
 <img src="https://github.com/Rishi575/React_IRC/blob/main/project/gitupimages/img2.png">
 <img src="https://github.com/Rishi575/React_IRC/blob/main/project/gitupimages/img3.png">
 <img src="https://github.com/Rishi575/React_IRC/blob/main/project/gitupimages/img4.png">
+<img src="https://github.com/Rishi575/React_IRC/blob/main/project/gitupimages/img5.png">
+<img src="https://github.com/Rishi575/React_IRC/blob/main/project/gitupimages/img6.png">
 
 
 ## 🚀 About Me
