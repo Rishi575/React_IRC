@@ -1,23 +1,37 @@
-import {useState} from "react"
+import {useState,useRef} from "react"
 import '../Assets/pop.css'
 
 
 const Nav =()=>{
 
-    const [data,setData]=useState({
-        name:'',
-        pass:''
-    })
+    const unameInputRef=useRef(null);
+    const passInputRef=useRef(null)
 
-    const handlechange =(e)=>{
-        setData({...data,[e.target.id]:e.target.value})
-        console.log(data)
-    }
+    // const [data,setData]=useState({
+    //     name:'',
+    //     pass:''
+    // })
+
+    // const handlechange =(e)=>{
+    //     setData({...data,[e.target.id]:e.target.value})
+    //     console.log(data)
+    // }
     
     const handleSubmit =(e)=>{
         e.preventDefault()
-        console.log("final data")
-        console.log(data)
+
+        const formData={
+
+            username:unameInputRef.current.value,
+            password:passInputRef.current.value
+
+
+        }
+        console.log(formData)
+        unameInputRef.current.value=('')
+        passInputRef.current.value=('')
+        unameInputRef.current.focus();
+        // console.log(data)
         //alert('submited')
     }
 
@@ -29,20 +43,22 @@ const Nav =()=>{
             <li><a href="/">Login</a></li>
         </ul>
         </nav>
+        <div className="form-wrap">
         <div>   
       
     <form className="container" onSubmit={handleSubmit}>
      <center>
       {/* <form className="input"><br/> */}
          
-        <input type="text" placeholder="Username" id="name" onChange={handlechange}/><br></br>
+        <input type="text" placeholder="Username" id="name" ref={unameInputRef}/><br></br>
         
-        <input type="password" placeholder="Password" id="pass" onChange={handlechange}/><br></br>
+        <input type="password" placeholder="Password" id="pass" ref={passInputRef}/><br></br>
       
         <button>Login</button>
         <button>Cancel</button>
      </center>
     </form>  
+</div>
 </div>
         </>
     )
