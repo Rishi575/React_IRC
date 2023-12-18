@@ -1,7 +1,9 @@
+import Nav from "./Components/NavBar";
+
 function App() {
   return (
     <>
-    
+    <Nav/>
     </>
   );
 }
