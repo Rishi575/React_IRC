@@ -1,4 +1,5 @@
-import '../sport.css'
+import '../Assests/css/sport.css'
+import Footer from '../Components/Footer'
 
 const Sport = () => {
     return (
@@ -112,35 +113,8 @@ const Sport = () => {
                         </div>
                     </main>
                 </div>
-                <form>
-                    <h3 className="foot">FREE RETURNS WITHIN 30 DAYS*</h3>
-                </form>
-                <form className='ali'>
-                <form className='foot1'>
-                        <h3>Most Loved Ones</h3>
-                    <ul>
-                        <li>Toys and games</li>
-                        <li>School & Travel</li>
-                        <li>Sports & Outdoor</li>
-                        <li>Ride-Ons And Cycles</li>
-                        <li>Gadgets</li>
-                        <li>Books</li>
-                    </ul>
-                </form>
-
-                <form className='foot1'>
-                        <h3>Most Searched</h3>
-                    <ul>
-                        <li>Lego</li>
-                        <li>Soft Toys</li>
-                        <li>Hot Wheels</li>
-                        <li>Nerf</li>
-                        <li>Barbie</li>
-                        <li>School Bags - Back To School</li>
-                    </ul>
-                </form>
-
-                </form>
+              <Footer/>
+                
             </form>
         </>
     )

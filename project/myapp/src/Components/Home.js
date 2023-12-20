@@ -1,5 +1,6 @@
 import '../Assests/css/Home.css'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 const Home = () => {
     return (
         <>
@@ -123,46 +124,8 @@ const Home = () => {
 
                 </ul>
             </form>
-
             
-
-            <form>
-            <h3 className="foot">FREE RETURNS WITHIN 30 DAYS*</h3>
-            </form> 
-            <form>
-                <li></li>
-            </form>
-
-
-
-            {/*    
-              
-            <form className='cat'>
-               <center> <h1 className="txt">Shop by Category<br/></h1></center>
-                <ul><br/>
-                    
-                  
-                </ul>
-            </form> 
-
-            <form className='bra'>
-               <center> <h1 className="txt">Shop by Brand<br/></h1></center>
-                <ul><br/>
-                    
-                    <li className="bra"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701342216Frame_1597879849.webp" /></li>
-                    <li className="bra"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701344167Frame_1597879843.webp" /></li>
-                    <li className="bra"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701341899Frame_1597879844.webp" /></li>
-                    <li className="bra"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701341967Frame_1597879836.webp" /></li>
-                  
-                </ul>
-            </form> 
-            <form className='vid'>
-            <video width="600" height="400" controls autoPlay muted>
-                <source src="https://hmadmin.hamleys.in/videos/1697525828paw%20patrol%20(2164%20x%201154%20px).mp4" type="video/mp4" />
-            </video>
-            </form> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            */}
-
+            <Footer/>
         </>
     )
 }
