@@ -1,51 +1,10 @@
 import '../Assests/css/Home.css'
+import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <>
             <form className="cont">
                 <img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1702294687desktop_banner_(21).webp"></img>
-            </form>
-
-            {/* Age Cards */}
-            <div className="txt"><h1>Shop By Age<br /><br /><br /></h1></div>
-            <form className='age'>
-                <ul><br />
-                    <div className="container">
-                        <div className="grid">
-                            <article>
-
-                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013402621694428463.webp" /></li>
-
-                            </article>
-
-                            <article>
-
-                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013400361694428464.webp" /></li>
-
-                            </article>
-
-                            <article>
-
-                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013434661694428466.webp" /></li>
-
-                            </article>
-
-                            <article>
-
-                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013388851694428467.webp" /></li>
-
-                            </article>
-
-                            <article>
-
-                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013383511694428468.webp" /></li>
-
-                            </article>
-
-                        </div>
-                    </div>
-
-                </ul>
             </form>
 
             {/* Shop By Category  */}
@@ -55,8 +14,9 @@ const Home = () => {
                     <div className="container">
                         <div className="grid">
                             <article>
+                            <Link to="sports&outdoor">
                                 <li className="cat"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/17014122461694428479.webp" /></li>
-
+                            </Link>
                             </article>
 
                             <article>
@@ -122,6 +82,57 @@ const Home = () => {
                 </ul>
             </form>
 
+            {/* Age Cards */}
+            <div className="txt"><h1>Shop By Age<br /><br /><br /></h1></div>
+            <form className='age'>
+                <ul><br />
+                    <div className="container">
+                        <div className="grid">
+                            <article>
+                                
+                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013402621694428463.webp" /></li>
+                                
+                            </article>
+
+                            <article>
+
+                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013400361694428464.webp" /></li>
+
+                            </article>
+
+                            <article>
+
+                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013434661694428466.webp" /></li>
+
+                            </article>
+
+                            <article>
+
+                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013388851694428467.webp" /></li>
+
+                            </article>
+
+                            <article>
+
+                                <li className="siz"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-category/17013383511694428468.webp" /></li>
+
+                            </article>
+
+                        </div>
+                    </div>
+
+                </ul>
+            </form>
+
+            
+
+            <form>
+            <h3 className="foot">FREE RETURNS WITHIN 30 DAYS*</h3>
+            </form> 
+            <form>
+                <li></li>
+            </form>
+
 
 
             {/*    
@@ -150,9 +161,7 @@ const Home = () => {
                 <source src="https://hmadmin.hamleys.in/videos/1697525828paw%20patrol%20(2164%20x%201154%20px).mp4" type="video/mp4" />
             </video>
             </form> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <form>
-            <h3 className="foot">FREE RETURNS WITHIN 30 DAYS*</h3>
-            </form> */}
+            */}
 
         </>
     )

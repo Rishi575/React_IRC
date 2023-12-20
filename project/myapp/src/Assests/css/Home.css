@@ -3,7 +3,6 @@
 } */
 
 .cont {
-
     margin-top: -7rem;
     display: flex;
     align-items: center;
@@ -82,12 +81,9 @@ ul {
     margin-right: 5px;
     border-radius: 1px;
     padding: 5px 80px;
-    background: #EF3B36;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #EF3B36);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #EF3B36);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #F00000; 
+    background: -webkit-linear-gradient(to right, #DC281E, #F00000);  
+    background: linear-gradient(to right, #DC281E, #F00000); 
 
     margin-bottom: 2rem;
 }
