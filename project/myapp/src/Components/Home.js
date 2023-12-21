@@ -124,6 +124,48 @@ const Home = () => {
 
                 </ul>
             </form>
+
+            {/*Characters */}
+            <div className="txt"><h1>Shop By Characters<br /><br /><br /></h1></div>
+            <form className='age'>
+                <ul><br />
+                    <div className="container">
+                        <div className="grid">
+                            {/* <article> */}
+                                
+                                <li className="char"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701414054Frame_1597879679.webp" /></li>
+                                
+                            {/* </article> */}
+
+                            {/* <article> */}
+
+                                <li className="char"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701413883Frame_1597879676.webp" /></li>
+
+                            {/* </article> */}
+
+                            {/* <article> */}
+
+                                <li className="char"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701413608Frame_1597879681.webp" /></li>
+
+                            {/* </article> */}
+
+                            {/* <article> */}
+
+                                <li className="char"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701413808Frame_1597879686.webp" /></li>
+
+                            {/* </article> */}
+
+                            {/* <article> */}
+
+                                <li className="char"><img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-banner/1701413534Frame_1597879677.webp" /></li>
+
+                            {/* </article> */}
+
+                        </div>
+                    </div>
+
+                </ul>
+            </form>
             
             <Footer/>
         </>

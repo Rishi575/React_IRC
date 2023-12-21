@@ -11,6 +11,7 @@ body{
   display: flex;
   justify-content: center;
   background-image: url("https://images.pexels.com/photos/6101961/pexels-photo-6101961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /* background: url("C:\Users\Rishi\OneDrive\Documents\GitHub\React_IRC\project\myapp\src\Assests\images\Christmas 3D animation video.mp4"); */
 }
 .container{
   display: flex;

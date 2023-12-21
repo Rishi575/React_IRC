@@ -189,27 +189,6 @@
   }
   
   .card:nth-child(4):before {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url(https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491959860/300/491959860-1.webp);
-  }
-  .card:nth-child(5):before {
-	background-image: url(https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491282065/300/491282065-1.webp);
-  }
-  
-  .card:nth-child(2):before {
-	background-image: url(https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/492410003/300/492410003-1.jpeg);
-  }
-  
-  .card:nth-child(3):before {
-	background-image: url(https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/492365367/300/492365367_-_1.jpeg);
-  }
-  
-  .card:nth-child(4):before {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-image: url(https://cdn.pixelspray.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/491959860/300/491959860-1.webp);
   }
   
@@ -232,6 +211,7 @@
 	font-size: 1.3rem;
 	font-weight: bold;
 	line-height: 1.2;
+	color: #0d0d0d;
   }
   
   .copy {

@@ -1,7 +1,14 @@
 /* body {
     overflow-x: hidden;
 } */
+.char{
+    transform: scale(0.99);
+    text-decoration: none;
+}
+.char:hover{
+    transform: translateY(-10px);
 
+}
 .cont {
     margin-top: -7rem;
     display: flex;
@@ -92,9 +99,14 @@ ul {
 .container {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
+.li{
+    text-decoration: none;
 
+}
 .grid {
+    text-decoration: none;
     margin: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -1,4 +1,5 @@
 import '../Assests/css/Nav.css'
+import Out from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 import * as React from 'react';
 
@@ -12,6 +13,7 @@ const Nav = () => {
                     <li><Link to="./Login">Track orders</Link></li>
                     <li><Link to="./Login">Login</Link></li> 
                     <li><Link to="./Contacts">My Bag</Link></li>
+                    <li><Link to="./Login"><Out/></Link></li>
                 </ul>
             </div>
         // </div>
