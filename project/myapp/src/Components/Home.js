@@ -166,6 +166,18 @@ const Home = () => {
 
                 </ul>
             </form>
+            {/* <div class="left-panel">
+        <Link to="/Home">
+            <i class="fa fa-home"></i> Home
+        </Link>
+        
+        <Link to="/">
+            <i class="fa fa-sign-out-alt"></i> Logout
+        </Link>
+        <Link to="/About">
+            <i class="fa fa-info-circle"></i> About Us
+        </Link>            
+    </div> */}
             
             <Footer/>
         </>

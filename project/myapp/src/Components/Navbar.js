@@ -12,7 +12,7 @@ const Nav = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="./Login">Track orders</Link></li>
                     <li><Link to="./Login">Login</Link></li> 
-                    <li><Link to="./Contacts">My Bag</Link></li>
+                    <li><Link to="./Cart">My Bag</Link></li>
                     <li><Link to="./Login"><Out/></Link></li>
                 </ul>
             </div>

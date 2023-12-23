@@ -5,7 +5,7 @@ const Demo = () => {
         <>
             <div className="container">
                 <div className='cont'></div>
-                    <h1>Hello Everyone</h1>
+                    <h1>Your Cart is Empty</h1>
                 
             </div>
         </>
