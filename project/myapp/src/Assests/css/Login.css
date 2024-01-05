@@ -1,32 +1,30 @@
 body{
-  /* overflow-y: hidden; */
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
   
 }
 .back{
-  /* background-size:100% ; */
   background-repeat: no-repeat;
-  height: 100%;
+  height: 80rem;
   width: 100%;
   display: flex;
   justify-content: center;
   background-image: url("https://images.pexels.com/photos/6101961/pexels-photo-6101961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  /* background: url("C:\Users\Rishi\OneDrive\Documents\GitHub\React_IRC\project\myapp\src\Assests\images\Christmas 3D animation video.mp4"); */
 }
 .container{
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   width: 45vw;
-  /* opacity: 0.5; */
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
+  background: red;
   justify-content: center;
   align-items: center;
-  margin-top: -4rem;
   background: transparent;
   padding-bottom: 30px;
   transform: scale(0.7);
-  border-radius: 50px;
-  border-color: #DC281E;
+  /* border-radius: 50px; */
 }
 
 
@@ -58,7 +56,9 @@ body{
   display: flex;
   flex-direction: column;
   gap:25px;
+  border-radius: 10rem;
 }
+
 
 .input{
   display:flex;
@@ -66,8 +66,8 @@ body{
   margin:auto;
   width:480px;
   height:80px;
-  background: #eaeaea;
-  border-radius: 6px;
+  backdrop-filter: blur(15px);
+  border-radius: 10rem;
 }
 
 .input img{
@@ -79,11 +79,13 @@ body{
   height:50px;
   width: 400px;
   background: transparent;
-  border: none;
-  outline: none;
   color: #797979;
   font-size: 19px;
-
+ border: none;
+ outline: none;
+}
+.input input:hover{
+  border-bottom: 2px solid red;
 }
 
 

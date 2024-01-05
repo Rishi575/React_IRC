@@ -11,16 +11,15 @@ import Demo from "./Pages/Demo";
 function App() {
   return (
     <div>
-      {/* <Demo/> */}
+      
+     {/* <Login/> */}
      <Nav/>
       <Routes>
-        <Route path="" element={<Home/>}/>
-       
+        <Route path="/" element={<Home/>}/>
         <Route path="Login" element={<Login/>} />
         <Route path="Sports&outdoor" element={<Sport/>}/>
         <Route path="/users" element={<Users/>}></Route>
         <Route path="/Cart" element={<Demo/>}/>
-    
       </Routes>
     </div>
   );
